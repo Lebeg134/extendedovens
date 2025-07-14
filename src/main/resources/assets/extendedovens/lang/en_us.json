@@ -1,0 +1,13 @@
+{
+  "itemGroup.extendedovens": "Example Mod Tab",
+  "block.extendedovens.example_block": "Example Block",
+  "item.extendedovens.example_item": "Example Item",
+
+  "extendedovens.configuration.title": "Create: Ovens Extended Configs",
+  "extendedovens.configuration.section.extendedovens.common.toml": "Create: Ovens Extended Configs",
+  "extendedovens.configuration.section.extendedovens.common.toml.title": "Create: Ovens Extended Configs",
+  "extendedovens.configuration.items": "Item List",
+  "extendedovens.configuration.logDirtBlock": "Log Dirt Block",
+  "extendedovens.configuration.magicNumberIntroduction": "Magic Number Text",
+  "extendedovens.configuration.magicNumber": "Magic Number"
+}
