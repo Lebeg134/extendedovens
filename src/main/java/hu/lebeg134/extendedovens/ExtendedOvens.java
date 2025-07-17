@@ -1,6 +1,7 @@
 package hu.lebeg134.extendedovens;
 
 import com.mojang.logging.LogUtils;
+import hu.lebeg134.extendedovens.blocks.simple_oven.SimpleOvenBlock;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -60,6 +61,9 @@ public class ExtendedOvens
             .displayItems((parameters, output) -> {
                 output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
             }).build());
+
+    // My content
+    public static final RegistryObject<Block> SIMPLE_OVEN_BLOCK = BLOCKS.register("simple_oven", () -> new SimpleOvenBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
 
     public ExtendedOvens()
     {
