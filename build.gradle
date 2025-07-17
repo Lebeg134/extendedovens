@@ -162,12 +162,12 @@ dependencies {
 // Uncomment the lines below if you wish to configure mixin. The mixin file should be named modid.mixins.json.
 
 mixin {
-    add sourceSets.main, "${mod_id}.refmap.json"
+    add sourceSets.main, "mixins.${mod_id}.refmap.json"
     config "${mod_id}.mixins.json"
 }
 
 dependencies {
-    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    annotationProcessor 'org.spongepowered:mixin:0.8.7:processor'
     annotationProcessor "io.github.llamalad7:mixinextras-common:0.4.1"
 }
 
