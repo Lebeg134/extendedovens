@@ -65,6 +65,8 @@ public class ExtendedOvens
     // My content
     public static final RegistryObject<Block> SIMPLE_OVEN_BLOCK = BLOCKS.register("simple_oven", () -> new SimpleOvenBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
 
+    public static final RegistryObject<Item> SIMPLE_OVEN_BLOCK_ITEM = ITEMS.register("simple_oven", () -> new BlockItem(SIMPLE_OVEN_BLOCK.get(), new Item.Properties()));
+
     public ExtendedOvens()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -105,8 +107,10 @@ public class ExtendedOvens
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(EXAMPLE_BLOCK_ITEM);
+            event.accept(SIMPLE_OVEN_BLOCK_ITEM);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
