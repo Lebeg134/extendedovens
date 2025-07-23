@@ -1,4 +1,4 @@
-package hu.lebeg134.extendedovens.blocks.simple_oven;
+package hu.lebeg134.ovens_extended.blocks.simple_oven;
 
 import com.simibubi.create.content.logistics.tunnel.BeltTunnelBlock;
 import com.simibubi.create.foundation.block.IBE;
